@@ -145,7 +145,7 @@ dmypy.json
 cython_debug/
 
 # VSCode specifics
-.vscode/
+#.vscode/ --this line is commented to keep sample workspace settings
 
 # Sonar scanner connection file
 sonar-project.properties
