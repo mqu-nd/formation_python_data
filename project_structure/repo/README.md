@@ -1,3 +1,3 @@
-# Premier projet pour la formation développeur python pour la data
+# Exemple de structure de projet
 
-#TODO: Ajouter des exercices
+Utiliser cette structure de projet pour la suite des TP.
