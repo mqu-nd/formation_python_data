@@ -150,3 +150,5 @@ cython_debug/
 # Sonar scanner connection file
 sonar-project.properties
 .scannerwork/
+
+solution/
