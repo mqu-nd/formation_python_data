@@ -1,0 +1,16 @@
+version: 1
+formatters:
+    stream_formatter:
+        format: '%(asctime)s | %(levelname)s | %(name)s | %(lineno)s | %(message)s'
+handlers:
+    stream_handler:
+        class: logging.StreamHandler
+        formatter: stream_formatter
+    stream_queue_handler_listener:
+        (): my_project.queue_listener_handler.QueueHandlerListener
+        handler_0: cfg://handlers.stream_handler
+        max_size: -1
+loggers:
+    test_logger:
+        handlers:
+            - stream_queue_handler_listener

@@ -1,5 +1,10 @@
-def main():
-    print("Hello, world!")
+"""Main module of the my_project package."""
 
-if __name__ == "__main__":
+def main():
+    """
+    Main function of the my_project module.
+    """
+    print("This is the main module of my_project.")
+
+if __name__ == '__main__':
     main()
