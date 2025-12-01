@@ -1,0 +1,45 @@
+# Configuration de logging au format YAML
+# Équivalent du fichier sample_logging.ini
+
+version: 1
+disable_existing_loggers: false
+
+# --- Formatters (mise en forme des logs) ---
+formatters:
+  defaultFormatter:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    # Format des logs :
+    # %(asctime)s → Date/heure
+    # %(name)s → Nom du logger
+    # %(levelname)s → Niveau (INFO, ERROR, etc.)
+    # %(message)s → Message du log
+
+# --- Handlers (sorties des logs) ---
+handlers:
+  # Handler pour la console
+  consoleHandler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: defaultFormatter
+    stream: ext://sys.stdout  # Destination : la sortie standard (console)
+  
+  # Handler pour le fichier
+  fileHandler:
+    class: logging.FileHandler
+    level: INFO
+    formatter: defaultFormatter
+    filename: 'app.log'       # Fichier "app.log"
+    mode: 'a'                 # Mode append ('a')
+
+# --- Loggers ---
+loggers:
+  # Logger nommé
+  appLogger:
+    level: DEBUG              # Niveau minimal pour appLogger (DEBUG et plus)
+    handlers: [consoleHandler, fileHandler]  # Envoie vers console et fichier
+    propagate: false          # Ne propage pas les logs vers le logger parent (root)
+
+# --- Logger racine ---
+root:
+  level: WARNING              # Niveau minimal pour root (WARNING et plus)
+  handlers: [consoleHandler]  # Root envoie ses logs vers la console
