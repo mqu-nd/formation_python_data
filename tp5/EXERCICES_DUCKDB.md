@@ -58,7 +58,6 @@ https://duckdb.org/docs/stable/guides/sql_editors/dbeaver
     - Enregistrez des DataFrames comme tables temporaires
     - Exécutez du SQL directement sur des DataFrames
     - Convertissez des résultats SQL en DataFrames
-    - Comparez les performances SQL vs Pandas
     
 # 2. **PyArrow et formats colonnaires** :
     - Travaillez avec des Tables PyArrow

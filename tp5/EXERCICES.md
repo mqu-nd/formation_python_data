@@ -10,3 +10,5 @@ pip install -r requirements.txt
 1. [Exercice sur pandas](EXERCICES_PANDAS.md)
 2. [Exercice sur numpy](EXERCICES_NUMPY.md)
 3. [Exercice sur pyarrow](EXERCICES_PYARROW.md)
+4. [Exercice sur duckdb](EXERCICES_DUCKDB.md)
+5. [Exercice sur pyodbc / sqlite](EXERCICES_PYODBC.md)

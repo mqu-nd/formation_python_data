@@ -74,7 +74,6 @@ def test_demo_numpy(array_simple):
 
 2. **Propriétés des arrays** :
    - Affichez la forme, la dimension, le type de données et la taille d'un array
-   - Vérifiez la différence de performance entre une liste Python et un array NumPy
 
 3. **Indexation et slicing** :
    - Accédez au 3ème élément d'un array 1D

@@ -117,15 +117,6 @@ def table_simple() -> pa.Table:
    - Convertissez entre PyArrow Tables et Pandas DataFrames
    - Gérez les types de données lors des conversions
 
-2. **Performance et mémoire** :
-   - Comparez l'utilisation mémoire entre Pandas et PyArrow
-   - Mesurez les performances de conversion
-   - Testez le copy vs zero-copy
-
-3. **Gestion des types** :
-   - Travaillez avec des types de données spécifiques (timestamp, decimal)
-   - Convertissez des types de données
-
 ### Exercice 3 : Opérations sur les données
 
 1. **Filtrage et sélection** :
