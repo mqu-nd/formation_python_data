@@ -31,7 +31,7 @@ rows = con.execute("SELECT b FROM t").fetchall()
 # Lecture directe de fichiers (sans ETL)
 
 Parquet : SELECT * FROM 'data.parquet'
-CSV (auto) : SELECT * FROM read_csv_auto('data.csv')
+CSV (auto) : SELECT * FROM 'data.csv'
 JSON (avec extension) : SELECT * FROM read_json_auto('data.json')
 
 Exemple :
